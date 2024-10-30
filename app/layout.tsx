@@ -20,9 +20,6 @@ export const metadata: Metadata = {
   title: "V-Verse",
   description:
     "Proudly, The 1st of It's Kind Worldwide, AIO Digital Platform For The Global Community Of The Veterinary Industry",
-  icons: {
-    icon: "/favicon.ico",
-  },
 };
 
 export default function RootLayout({
@@ -35,7 +32,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-50 `}
       >
-        <link rel="icon" href="/favicon.ico" sizes="any" />
         <Header />
         <LayoutWrapper>{children}</LayoutWrapper>
         <Footer />

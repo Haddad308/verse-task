@@ -41,7 +41,7 @@ const PricingPlans: React.FC<PricingPlansProps> = ({ plans }) => {
           />
         </div>
 
-        <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 mx-auto grid md:grid-cols-2 lg:grid-cols-4">
           {renderPricingCards(false)}
         </div>
 
@@ -58,8 +58,8 @@ const PricingPlans: React.FC<PricingPlansProps> = ({ plans }) => {
         </div>
       </div>
 
-      <div className="container px-4 md:px-6">
-        <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-4">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="mt-12 mx-auto grid md:grid-cols-2 lg:grid-cols-4">
           {renderPricingCards(true)}
         </div>
       </div>
