@@ -2,20 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --radius: 0.5rem;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.gradient-text {
+  background: linear-gradient(62.47deg, #016dea 27.41%, #fa0101 95.02%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-border {
+  position: relative;
+  padding: 4px; /* Adjust padding as needed */
+  border-radius: 8px; /* Adjust border radius as needed */
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    #2563eb,
+    #dc2626
+  ); /* Tailwind colors: blue-600 to red-600 */
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.gradient-border > * {
+  position: relative;
+  background-color: white; /* Adjust based on desired background */
+  border-radius: inherit;
+}
+
+.shadow-top {
+  box-shadow: 0px -2px 9px -3px rgba(162, 143, 143, 0.88);
+  -webkit-box-shadow: 0px -2px 9px -3px rgba(162, 143, 143, 0.88);
+  -moz-box-shadow: 0px -2px 9px -3px rgba(162, 143, 143, 0.88);
 }
