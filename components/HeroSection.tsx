@@ -19,7 +19,7 @@ export default function HeroSection() {
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:gap-16">
           {/* Left Content */}
           <div className="flex flex-col justify-center space-y-4">
-            <h1 className="bg-gradient-to-r from-[#016DEA] via-[#8B4FE3] to-[#A259FF] bg-clip-text text-4xl font-bold tracking-tighter text-transparent sm:text-5xl xl:text-6xl/none">
+            <h1 className="gradient-text bg-clip-text text-4xl font-bold tracking-tighter text-transparent sm:text-5xl xl:text-6xl/none">
               You&apos;re About
               <br />
               To Be Unleashed

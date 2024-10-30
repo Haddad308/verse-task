@@ -5,10 +5,8 @@ export interface PlanFeature {
   value: string | number | boolean;
 }
 
-// types/types.ts
 export interface SubscriptionPlansResponse {
   data: Plan[]; // Assuming 'data' is an array of Plan objects
-  // Add any other fields that are returned from your API
 }
 
 export interface Plan {
